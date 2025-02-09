@@ -17,7 +17,7 @@ const CreateTaskSchema = z.object({
   title: z.string(),
   description: z.string(),
   status: z.enum(["todo", "doing", "done"]),
-  priority: z.enum(["low", "medium", "hight"]),
+  priority: z.enum(["low", "medium", "high"]),
 });
 
 export const CreateTaskForm: React.FC = () => {
